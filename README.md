@@ -1,8 +1,8 @@
 # vibe-check-it
 
-How many times have you asked ChatGPT a question, received an answer, then asked “Are you sure?” — only for ChatGPT to give a different response? This package is designed for exactly those moments.
+How many times have you asked ChatGPT a question, received an answer, then asked “Are you sure?” - only for ChatGPT to give a different response? This package is designed for exactly those moments.
 
-**vibe-check-it** is a lightweight Python utility that uses GPT-5 to verify the correctness of your vibe functions' outputs. Pass any function call and its result, and it will ask the AI, “Are you sure this output is correct?” — returning a Python boolean (`True` or `False`).
+**vibe-check-it** is a lightweight Python utility that uses GPT-5 to verify the correctness of your vibe functions' outputs. Pass any function call and its result, and it will ask the AI, “Are you sure this output is correct?” - returning a Python boolean (`True` or `False`).
 
 
 ---
@@ -43,4 +43,3 @@ print(f"Output is correct? {is_correct}")  # True or False
 
 * Python 3.10+
 * Valid OpenAI API key set in environment variable `OPENAI_API_KEY`
-
