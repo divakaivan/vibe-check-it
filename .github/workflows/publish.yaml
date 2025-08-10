@@ -30,7 +30,8 @@ jobs:
     - name: Set version from release tag
       run: |
         VERSION=${GITHUB_REF#refs/tags/v}
-        sed -i "s/version = \".*\"/version = \"$VERSION\"/" pyproject.toml
+        echo "Setting version to: $VERSION"
+        sed -i 's/version = "[^"]*"/version = "'"$VERSION"'"/' pyproject.toml
 
     - name: Build package
       run: uv run python -m build
