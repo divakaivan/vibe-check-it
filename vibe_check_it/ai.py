@@ -7,6 +7,7 @@ from typing import TypeVar, Type, Callable, Any
 class AreYouSureResponse(BaseModel):
     vibe_check: bool
 
+
 def vibe_check_it(fn: Callable[..., Any], *args, **kwargs) -> bool:
     vibe_output = fn(*args, **kwargs)
 
@@ -22,7 +23,9 @@ def vibe_check_it(fn: Callable[..., Any], *args, **kwargs) -> bool:
         model="gpt-5",
     ).vibe_check
 
+
 T = TypeVar("T", bound=BaseModel)
+
 
 def structured_output(
     prompt: str,
@@ -59,4 +62,3 @@ def structured_output(
             "OpenAI would never let its downstream users down! "
             f"Exception: {e}"
         )
-
