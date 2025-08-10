@@ -2,8 +2,7 @@
 
 How many times have you asked ChatGPT a question, received an answer, then asked “Are you sure?” - only for ChatGPT to give a different response? This package is designed for exactly those moments.
 
-**vibe-check-it** is a lightweight Python utility that uses GPT-5 to verify the correctness of your vibe functions' outputs. Pass any function call and its result, and it will ask the AI, “Are you sure this output is correct?” - returning a Python boolean (`True` or `False`).
-
+**vibe-check-it** is a lightweight Python utility that uses the coolest AI on the block - GPT-5 to verify the correctness of your vibe functions' outputs. Pass any function with inputs for it, and `vibe-check-it` will ask GPT-5, *"Are you sure this output is correct?"* - returning a boolean (`True` or `False`).
 
 ---
 
@@ -25,7 +24,9 @@ from vibe_check_it import vibe_check_it
 
 is_correct = vibe_check_it(vibesort, [2,3,4,1])
 
-print(f"Output is correct? {is_correct}")  # True or False
+print(f"Output is correct? {is_correct}")
+# True - vibesort's output was vibe-checked and it's correct
+# False - seems GPT-5 wasn't sure the output is correct
 ```
 
 ---
