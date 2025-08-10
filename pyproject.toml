@@ -1,6 +1,6 @@
 [project]
 name = "vibe-check-it"
-version = "0.1.2"
+version = "from release tag"
 description = "Check if your vibe functions are correctly vibing"
 readme = "README.md"
 authors = [
